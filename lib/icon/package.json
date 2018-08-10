@@ -1,0 +1,78 @@
+{
+  "_from": "@alife/vext/lib/icon@0.0.*",
+  "_id": "@alife/vext/lib/icon@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-tgCQIynSO51uefsUgdn3/qnl+oE=",
+  "_location": "/@alife/vext/lib/icon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@alife/vext/lib/icon@0.0.*",
+    "name": "@alife/vext/lib/icon",
+    "escapedName": "@alife%2fvext-icon",
+    "scope": "@alife",
+    "rawSpec": "0.0.*",
+    "saveSpec": null,
+    "fetchSpec": "0.0.*"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@alife/vext/lib/icon/download/@alife/vext-icon-0.0.1.tgz",
+  "_shasum": "b600902329d23b9d6e79fb1481d9f7fea9e5fa81",
+  "_spec": "@alife/vext/lib/icon@0.0.*",
+  "_where": "/Users/chen/Desktop/Vext/vext/sync",
+  "author": {
+    "name": "leiling.cp",
+    "email": "leiling.cp@alibaba-inc.com"
+  },
+  "bundleDependencies": false,
+  "ci": {
+    "type": "gitlab",
+    "version": "6",
+    "docker": true,
+    "fntest": false,
+    "command": "test"
+  },
+  "contributors": [
+    {
+      "name": "雷凌",
+      "email": "leiling.cp@alibaba-inc.com",
+      "url": "https://work.alibaba-inc.com/work/u/78660"
+    }
+  ],
+  "dependencies": {
+    "@alife/vext/lib/core": "^0.0.7",
+    "vue": "^2.x"
+  },
+  "deprecated": false,
+  "description": "## API",
+  "devDependencies": {
+    "@ali/ci": "^3.12.2",
+    "ali-contributors": "^2.1.1",
+    "babel-preset-env": "^1.x"
+  },
+  "keywords": [
+    "vext",
+    "icon"
+  ],
+  "license": "MIT",
+  "main": "lib/index",
+  "name": "@alife/vext/lib/icon",
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:vext/icon.git"
+  },
+  "scripts": {
+    "build": "vext-bin build",
+    "contributors": "ali-contributors",
+    "dev": "vext-bin dev",
+    "prepublish": "rm -fr test/coverage && tnpm run build",
+    "test": "vext-bin test"
+  },
+  "version": "0.0.1"
+}

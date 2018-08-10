@@ -1,0 +1,82 @@
+{
+  "_from": "@alife/vext/lib/core@0.0.*",
+  "_id": "@alife/vext/lib/core@0.0.9",
+  "_inBundle": false,
+  "_integrity": "sha1-ZOnsyYOPQCYaWzFZ6LCTwQqw6jU=",
+  "_location": "/@alife/vext/lib/core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@alife/vext/lib/core@0.0.*",
+    "name": "@alife/vext/lib/core",
+    "escapedName": "@alife%2fvext-core",
+    "scope": "@alife",
+    "rawSpec": "0.0.*",
+    "saveSpec": null,
+    "fetchSpec": "0.0.*"
+  },
+  "_requiredBy": [
+    "/",
+    "/@alife/vext/lib/button"
+  ],
+  "_resolved": "http://registry.npm.alibaba-inc.com/@alife/vext/lib/core/download/@alife/vext-core-0.0.9.tgz",
+  "_shasum": "64e9ecc9838f40261a5b3159e8b093c10ab0ea35",
+  "_spec": "@alife/vext/lib/core@0.0.*",
+  "_where": "/Users/chen/Desktop/Vext/vext/sync",
+  "author": {
+    "name": "leiling.cp",
+    "email": "leiling.cp@alibaba-inc.com"
+  },
+  "bundleDependencies": false,
+  "ci": {
+    "type": "gitlab",
+    "version": "6",
+    "docker": true,
+    "fntest": false,
+    "command": "test"
+  },
+  "deprecated": false,
+  "description": "vext 核心变量",
+  "devDependencies": {
+    "@ali/ci": "^3.12.2",
+    "@ali/sassdoc-parser": "^1.2.3",
+    "ali-contributors": "^2.1.1",
+    "http-server": "^0.11.1",
+    "mocha": "^4.0.1",
+    "sassaby": "^2.1.1",
+    "stylelint": "^8.2.0",
+    "stylelint-scss": "^2.1.0"
+  },
+  "files": [
+    "doc",
+    "lib",
+    "src",
+    "test",
+    "HISTORY.md",
+    "README.md"
+  ],
+  "keywords": [
+    "vext",
+    "core"
+  ],
+  "license": "MIT",
+  "name": "@alife/vext/lib/core",
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:vext/core.git"
+  },
+  "scripts": {
+    "build": "vext-bin build",
+    "contributors": "ali-contributors",
+    "dev": "tnpm run site && http-server ./doc",
+    "precommit": "tnpm run lint",
+    "prepublish": "rm -fr test/coverage && tnpm run build",
+    "site": "docify",
+    "test": "mocha --inline-diffs ./test/index.js"
+  },
+  "version": "0.0.9"
+}

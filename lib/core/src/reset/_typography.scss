@@ -1,0 +1,91 @@
+/**
+ * 定义基础排版样式
+ */
+
+html {
+    font-size: 100%;
+
+    // font-smooth has been removed from this specification, Works only on Mac OS X platform.
+    // -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-body-1;
+    line-height: $font-lineheight-1;
+    color: $color-text1-4;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font-weight: inherit;
+}
+
+h1 {
+    margin-bottom: $font-size-headline * 0.5;
+    font-size: $font-size-headline;
+    font-weight: $font-weight-2;
+    line-height: 36px;
+}
+
+h2 {
+    margin-bottom: $font-size-title * 0.5;
+    font-size: $font-size-title;
+    font-weight: $font-weight-2;
+    line-height: 30px;
+}
+
+h3 {
+    margin-bottom: $font-size-subhead * 0.5;
+    font-size: $font-size-subhead;
+    font-weight: $font-weight-2;
+    line-height: 24px;
+}
+
+h4 {
+    margin-bottom: $font-size-subhead * 0.5;
+    font-size: $font-size-subhead;
+    font-weight: $font-weight-2;
+    line-height: 24px;
+}
+
+h5 {
+    margin-bottom: $font-size-body-1 * 0.5;
+    font-size: $font-size-body-2;
+    font-weight: $font-weight-2;
+    line-height: 24px;
+}
+
+h6 {
+    margin-bottom: $font-size-body-2 * 0.5;
+    font-size: $font-size-body-1;
+    font-weight: $font-weight-2;
+    line-height: 20px;
+}
+
+p {
+    margin-bottom: $font-size-body-1 * 0.5;
+    font-size: $font-size-body-1;
+    font-weight: $font-weight-2;
+    line-height: 20px;
+}
+
+strong {
+    font-weight: 500;
+}
+
+small {
+    font-size: 75%;
+}

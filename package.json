@@ -1,0 +1,41 @@
+{
+  "name": "@no-repeat/vext",
+  "version": "0.0.1",
+  "description": "vext",
+  "keywords": [
+    "vext"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/no-repeat/vext.git"
+  },
+  "author": "no-repeat <chenpeng.mini@gmail.com>",
+  "scripts": {
+    "build": "webpack",
+    "sync": "vext-bin sync",
+    "daily": "tnpm run build && git checkout -b daily/$npm_package_version && git add . && git commit -m \"release $npm_package_version\" && git push origin daily/$npm_package_version",
+    "release": "git tag publish/$npm_package_version -f && git push origin publish/$npm_package_version && tnpm publish"
+  },
+  "main": "index",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-runtime": "^6.26.0",
+    "chalk": "^2.4.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "4.0.0-alpha.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "vue-loader": "^15.2.2",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.x",
+    "webpack-cli": "^2.1.4"
+  },
+  "dependencies": {
+    "vue": "^2.x"
+  }
+}

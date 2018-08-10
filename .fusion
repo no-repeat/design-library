@@ -2,17 +2,27 @@
   "engine": "scss",
   "import": {
     "sources": {
-      "dir": "lib/_components/@alife",
-      "scss-entry": "lib/index.scss",
-      "entries": {
-        "core": "lib/_components/@alife/next-core/lib/index-noreset.scss"
-      }
+      "dir": "lib",
+      "entry-file": "lib/index.scss",
+      "entries": {}
     },
     "demos": {
       "dir": "demos",
-      "html-entry": "index.html",
+      "entry-file": "index.html",
       "entries": {}
     }
+  },
+  "styles": {
+    "size": {
+      "max": 50,
+      "base": "$size-base"
+    },
+    "color": [{}],
+    "croner": [{}],
+    "font": [{}],
+    "icon": [{}],
+    "line": [{}],
+    "shadow": [{}],
   },
   "components": [
     {

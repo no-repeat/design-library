@@ -1,0 +1,239 @@
+@import "~@alife/vext/lib/core/lib/index";
+
+@import "./scss/variable";
+@import "./scss/normalize";
+@import "./scss/mixin";
+@import "./scss/animation";
+
+#{$button-prefix} {
+    & {
+        position: relative;
+        display: inline-block;
+        box-shadow: $button-shadow;
+        text-decoration: none;
+        text-align: center;
+        text-transform: none;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        transition: all .3s ease-out;
+        cursor: pointer;
+
+        &:after {
+            text-align: center;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease;
+        }
+
+        &.hover,
+        &:hover {
+            box-shadow: $button-shadow-hover;
+        }
+    }
+
+    // 尺寸维度
+    &.#{$css-prefix} {
+        &small {
+            @include button-size($button-size-s-padding, $button-size-s-height, $button-size-s-font, $button-size-s-border-width, $button-size-s-corner);
+        }
+
+        &medium {
+            @include button-size($button-size-m-padding, $button-size-m-height, $button-size-m-font, $button-size-m-border-width, $button-size-m-corner);
+        }
+
+        &large {
+            @include button-size($button-size-l-padding, $button-size-l-height, $button-size-l-font, $button-size-l-border-width, $button-size-l-corner);
+        }
+    }
+
+    // 普通按钮
+    &#{$button-prefix} {
+        &-normal {
+            border-style: $button-pure-normal-border-style;
+
+            @include button-color($button-pure-normal-color, $button-pure-normal-color-hover, $button-pure-normal-bg, $button-pure-normal-bg-hover, $button-pure-normal-border-color, $button-pure-normal-border-color-hover);
+        }
+
+        &-primary {
+            border-style: $button-pure-primary-border-style;
+
+            @include button-color($button-pure-primary-color, $button-pure-primary-color-hover, $button-pure-primary-bg, $button-pure-primary-bg-hover, $button-pure-primary-border-color, $button-pure-primary-border-color-hover);
+        }
+
+        &-secondary {
+            border-style: $button-pure-secondary-border-style;
+
+            @include button-color($button-pure-secondary-color, $button-pure-secondary-color-hover, $button-pure-secondary-bg, $button-pure-secondary-bg-hover, $button-pure-secondary-border-color, $button-pure-secondary-border-color-hover);
+        }
+    }
+
+    // 普通态禁用样式
+    &.disabled,
+    &[disabled] {
+        cursor: not-allowed;
+
+        @include button-color($button-pure-color-disabled, $button-pure-color-disabled, $button-pure-bg-disabled, $button-pure-bg-disabled, $button-pure-border-color-disabled, $button-pure-border-color-disabled);
+    }
+
+    // 警告按钮
+    &-warning {
+        border-style: $button-warning-border-style;
+
+        &#{$button-prefix}-primary {
+            @include button-color($button-warning-primary-color, $button-warning-primary-color-hover, $button-warning-primary-bg, $button-warning-primary-bg-hover, $button-warning-primary-border-color, $button-warning-primary-border-color-hover);
+
+            &.disabled,
+            &[disabled] {
+                @include button-color($button-warning-primary-color-disabled, $button-warning-primary-color-disabled, $button-warning-primary-bg-disabled, $button-warning-primary-bg-disabled, $button-warning-primary-border-color-disabled, $button-warning-primary-border-color-disabled);
+            }
+        }
+
+        &#{$button-prefix}-normal {
+            @include button-color($button-warning-normal-color, $button-warning-normal-color-hover, $button-warning-normal-bg, $button-warning-normal-bg-hover, $button-warning-normal-border-color, $button-warning-normal-border-color-hover);
+
+            &.disabled,
+            &[disabled] {
+                @include button-color($button-warning-normal-color-disabled, $button-warning-normal-color-disabled, $button-warning-normal-bg-disabled, $button-warning-normal-bg-disabled, $button-warning-normal-border-color-disabled, $button-warning-normal-border-color-disabled);
+            }
+        }
+    }
+
+    // 文本按钮
+    &-text {
+        box-shadow: none;
+        border-radius: 0;
+
+        &#{$button-prefix}-primary {
+            @include button-color($button-text-primary-color, $button-text-primary-color-hover, transparent, transparent, transparent, transparent);
+        }
+
+        &#{$button-prefix}-secondary {
+            @include button-color($button-text-secondary-color, $button-text-secondary-color-hover, transparent, transparent, transparent, transparent);
+        }
+
+        &#{$button-prefix}-normal {
+            @include button-color($button-text-normal-color, $button-text-normal-color-hover, transparent, transparent, transparent, transparent);
+        }
+
+        &.#{$css-prefix}large {
+            @include button-size(0, $button-text-size-l-height, $button-text-size-l-font, 0, 0);
+        }
+
+        &.#{$css-prefix}medium {
+            @include button-size(0, $button-text-size-m-height, $button-text-size-m-font, 0, 0);
+        }
+
+        &.#{$css-prefix}small {
+            @include button-size(0, $button-text-size-s-height, $button-text-size-s-font, 0, 0);
+        }
+
+        &.disabled,
+        &[disabled] {
+            @include button-color($button-text-disabled-color, $button-text-disabled-color, transparent, transparent, transparent, transparent);
+        }
+
+        &#{$button-prefix}-loading {
+            @include button-color($button-text-loading-color, $button-text-loading-color, transparent, transparent, transparent, transparent);
+        }
+    }
+
+    // 加载状态中
+    &-loading {
+        pointer-events: none;
+        opacity: .8;
+
+        &:after {
+            font-family: $icon-font-family;
+            content: $icon-content-loading;
+            opacity: 1;
+            visibility: visible;
+            animation: cycleRotation 2s infinite linear;
+        }
+    }
+
+    // 幽灵按钮
+    &-ghost {
+        box-shadow: none;
+        border-style: $button-ghost-border-style;
+
+        &#{$button-prefix}-dark {
+            @include button-color($button-ghost-dark-color, $button-ghost-dark-color-hover, $button-ghost-dark-bg-normal, $button-ghost-dark-bg-hover, $button-ghost-dark-border-color, $button-ghost-dark-border-color-hover);
+
+            &.disabled,
+            &[disabled] {
+                @include button-color($button-ghost-dark-color-disabled, $button-ghost-dark-color-disabled, $button-ghost-dark-bg-disabled, $button-ghost-dark-bg-disabled, $button-ghost-dark-border-color-disabled, $button-ghost-dark-border-color-disabled);
+            }
+        }
+
+        &#{$button-prefix}-light {
+            @include button-color($button-ghost-light-color, $button-ghost-light-color-hover, $button-ghost-light-bg-normal, $button-ghost-light-bg-hover, $button-ghost-light-border-color, $button-ghost-light-border-color-hover);
+
+            &.disabled,
+            &[disabled] {
+                @include button-color($button-ghost-light-color-disabled, $button-ghost-light-color-disabled, $button-ghost-light-bg-disabled, $button-ghost-light-bg-disabled, $button-ghost-light-border-color-disabled, $button-ghost-light-border-color-disabled);
+            }
+        }
+    }
+
+    // 组合
+    &-group {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+
+        > #{$button-prefix} {
+            position: relative;
+            float: left;
+            box-shadow: none;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                z-index: 1;
+            }
+
+            &.disabled,
+            &[disabled] {
+                z-index: 0;
+            }
+        }
+
+        #{$button-prefix}#{$button-prefix} {
+            margin: 0 0 0 -1px;
+        }
+
+        #{$button-prefix}:not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+
+        > #{$button-prefix}:first-child {
+            margin: 0;
+        }
+
+        > #{$button-prefix}:first-child:not(:last-child) {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        > #{$button-prefix}:last-child:not(:first-child) {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        > #{$button-prefix}-primary:not(:first-child) {
+            border-left-color: transparentize($color-white, 0.8);
+
+            &:hover {
+                border-left-color: transparent;
+            }
+
+            &.disabled,
+            &[disabled] {
+                border-left-color: $color-line1-1;
+            }
+        }
+    }
+}

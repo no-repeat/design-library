@@ -1,0 +1,140 @@
+////
+/// @group icon
+/// @module icon: 图标
+/// @type String
+/// @category style
+////
+
+// Icon
+// 根据 Alibaba Base DPL 设计实现
+
+/// icon-font-path 字体路径
+$icon-font-path: "//at.alicdn.com/t/font_515771_emcns5054x3whfr" !default;
+
+/// icon-font-family 自定义的icon font 名称
+$icon-font-family: #{to-upper-case(str-slice($css-prefix, 1, 1))}#{str-slice($css-prefix, 2, str-length($css-prefix) - 1)}Icon !default;
+
+@font-face {
+    font-family: $icon-font-family;
+    src: url("#{$icon-font-path}.eot");
+    src: url("#{$icon-font-path}.eot?#iefix") format("embedded-opentype"), url("#{$icon-font-path}.woff") format("woff"), url("#{$icon-font-path}.ttf") format("truetype"), url("#{$icon-font-path}.svg#NextIcon") format("svg");
+}
+
+// ------------------- 图标尺寸 ---------------------- //
+
+/// icon-xxs
+/// @export
+$icon-xxs: $s-2 !default;
+
+/// icon-xs
+/// @export
+$icon-xs: $s-3 !default;
+
+/// icon-s
+/// @export
+$icon-s: $s-4 !default;
+
+/// icon-m
+/// @export
+$icon-m: $s-5 !default;
+
+/// icon-l
+/// @export
+$icon-l: $s-6 !default;
+
+/// icon-xl
+/// @export
+$icon-xl: $s-8 !default;
+
+/// icon-xxl
+/// @export
+$icon-xxl: $s-12 !default;
+
+/// icon-xxxl
+/// @export
+$icon-xxxl: $s-16 !default;
+
+// ------------------- 图标 unicode 值 ---------------------- //
+$icon-content-smile: "\e65f" !default;
+
+$icon-content-cry: "\e65d" !default;
+
+$icon-content-success: "\e60a" !default;
+
+$icon-content-warning: "\e60b" !default;
+
+$icon-content-prompt: "\e60c" !default;
+
+$icon-content-error: "\e60d" !default;
+
+$icon-content-help: "\e673" !default;
+
+$icon-content-clock: "\e621" !default;
+
+$icon-content-success-filling: "\e63a" !default;
+
+$icon-content-delete-filling: "\e623" !default;
+
+$icon-content-favorites-filling: "\e60e" !default;
+
+$icon-content-add: "\e655" !default;
+
+$icon-content-minus: "\e601" !default;
+
+$icon-content-arrow-up: "\e625" !default;
+
+$icon-content-arrow-down: "\e63d" !default;
+
+$icon-content-arrow-left: "\e61d" !default;
+
+$icon-content-arrow-right: "\e619" !default;
+
+$icon-content-arrow-double-left: "\e659" !default;
+
+$icon-content-arrow-double-right: "\e65e" !default;
+
+$icon-content-switch: "\e6b3" !default;
+
+$icon-content-sorting: "\e634" !default;
+
+$icon-content-descending: "\e61f" !default;
+
+$icon-content-ascending: "\e61e" !default;
+
+$icon-content-select: "\e632" !default;
+
+$icon-content-semi-select: "\e633" !default;
+
+$icon-content-loading: "\e646" !default;
+
+$icon-content-search: "\e656" !default;
+
+$icon-content-close: "\e626" !default;
+
+$icon-content-ellipsis: "\e654" !default;
+
+$icon-content-picture: "\e631" !default;
+
+$icon-content-calendar: "\e607" !default;
+
+$icon-content-ashbin: "\e639" !default;
+
+$icon-content-upload: "\e7ee" !default;
+
+$icon-content-download: "\e628" !default;
+
+$icon-content-set: "\e683" !default;
+
+$icon-content-edit: "\e63b" !default;
+
+$icon-content-refresh: "\e677" !default;
+
+$icon-content-filter: "\e627" !default;
+
+$icon-content-attachment: "\e665" !default;
+
+$icon-content-account: "\e608" !default;
+
+$icon-content-email: "\e605" !default;
+
+$icon-content-atm: "\e606" !default;

@@ -1,0 +1,219 @@
+@import "~@alife/vext/lib/core/lib/index";
+
+@import "./scss/variable";
+@import "./scss/normalize";
+@import "./scss/animation";
+@import "./scss/mixin";
+
+#{$icon-prefix} {
+    & {
+        font-size: 0;
+        display: inline-block;
+    }
+
+    &:after {
+        font-family: $icon-font-family;
+        font-style: normal;
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    &-smile:after {
+        content: $icon-content-smile;
+    }
+
+    &-cry:after {
+        content: $icon-content-cry;
+    }
+
+    &-success:after {
+        content: $icon-content-success;
+    }
+
+    &-warning:after {
+        content: $icon-content-warning;
+    }
+
+    &-prompt:after {
+        content: $icon-content-prompt;
+    }
+
+    &-error:after {
+        content: $icon-content-error;
+    }
+
+    &-help:after {
+        content: $icon-content-help;
+    }
+
+    &-clock:after {
+        content: $icon-content-clock;
+    }
+
+    &-success-filling:after {
+        content: $icon-content-success-filling;
+    }
+
+    &-delete-filling:after {
+        content: $icon-content-delete-filling;
+    }
+
+    &-favorites-filling:after {
+        content: $icon-content-favorites-filling;
+    }
+
+    &-add:after {
+        content: $icon-content-add;
+    }
+
+    &-minus:after {
+        content: $icon-content-minus;
+    }
+
+    &-arrow-up:after {
+        content: $icon-content-arrow-up;
+    }
+
+    &-arrow-down:after {
+        content: $icon-content-arrow-down;
+    }
+
+    &-arrow-left:after {
+        content: $icon-content-arrow-left;
+    }
+
+    &-arrow-right:after {
+        content: $icon-content-arrow-right;
+    }
+
+    &-arrow-double-left:after {
+        content: $icon-content-arrow-double-left;
+    }
+
+    &-arrow-double-right:after {
+        content: $icon-content-arrow-double-right;
+    }
+
+    &-switch:after {
+        content: $icon-content-switch;
+    }
+
+    &-sorting:after {
+        content: $icon-content-sorting;
+    }
+
+    &-descending:after {
+        content: $icon-content-descending;
+    }
+
+    &-ascending:after {
+        content: $icon-content-ascending;
+    }
+
+    &-select:after {
+        content: $icon-content-select;
+    }
+
+    &-semi-select:after {
+        content: $icon-content-semi-select;
+    }
+
+    &-search:after {
+        content: $icon-content-search;
+    }
+
+    &-close:after {
+        content: $icon-content-close;
+    }
+
+    &-ellipsis:after {
+        content: $icon-content-ellipsis;
+    }
+
+    &-picture:after {
+        content: $icon-content-picture;
+    }
+
+    &-calendar:after {
+        content: $icon-content-calendar;
+    }
+
+    &-ashbin:after {
+        content: $icon-content-ashbin;
+    }
+
+    &-upload:after {
+        content: $icon-content-upload;
+    }
+
+    &-download:after {
+        content: $icon-content-download;
+    }
+
+    &-set:after {
+        content: $icon-content-set;
+    }
+
+    &-edit:after {
+        content: $icon-content-edit;
+    }
+
+    &-refresh:after {
+        content: $icon-content-refresh;
+    }
+
+    &-filter:after {
+        content: $icon-content-filter;
+    }
+
+    &-attachment:after {
+        content: $icon-content-attachment;
+    }
+
+    &-account:after {
+        content: $icon-content-account;
+    }
+
+    &-email:after {
+        content: $icon-content-email;
+    }
+
+    &-atm:after {
+        content: $icon-content-atm;
+    }
+
+    &-loading:after {
+        content: $icon-content-loading;
+        animation: cycleRotation 1s infinite linear;
+    }
+
+    &-xxs {
+        @include icon-size($icon-xxs);
+    }
+
+    &-xs {
+        @include icon-size($icon-xs);
+    }
+
+    &-s {
+        @include icon-size($icon-s);
+    }
+
+    &-m {
+        @include icon-size($icon-m);
+    }
+
+    &-l {
+        @include icon-size($icon-l);
+    }
+
+    &-xl {
+        @include icon-size($icon-xl);
+    }
+
+    &-xxl {
+        @include icon-size($icon-xxl);
+    }
+}

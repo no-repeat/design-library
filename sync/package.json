@@ -1,0 +1,14 @@
+{
+  "name": "nobody",
+  "private": true,
+  "description": "Install components from tnpm",
+  "version": "0.0.0",
+  "dependencies": {
+    "@alife/vext-core": "0.0.*",
+    "@alife/vext-icon": "0.0.*",
+    "@alife/vext-button": "0.0.*"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  }
+}
