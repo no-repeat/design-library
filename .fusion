@@ -1,0 +1,75 @@
+{
+  "engine": "scss",
+  "import": {
+    "sources": {
+      "dir": "lib/_components/@alife",
+      "scss-entry": "lib/index.scss",
+      "entries": {
+        "core": "lib/_components/@alife/next-core/lib/index-noreset.scss"
+      }
+    },
+    "demos": {
+      "dir": "demos",
+      "html-entry": "index.html",
+      "entries": {}
+    }
+  },
+  "components": [
+    {
+      "name": "color",
+      "description": "颜色",
+      "type": "style",
+      "var-prefix": "$color-",
+      "class-prefix": "next-color"
+    },
+    {
+      "name": "corner",
+      "description": "边角",
+      "type": "style",
+      "var-prefix": "$corner-",
+      "class-prefix": "next-corner"
+    },
+    {
+      "name": "font",
+      "description": "字体",
+      "type": "style",
+      "var-prefix": "$font-",
+      "class-prefix": "next-font"
+    },
+    {
+      "name": "icon",
+      "description": "图标",
+      "type": "style",
+      "var-prefix": "$icon-",
+      "class-prefix": "next-icon"
+    },
+    {
+      "name": "line",
+      "description": "线条",
+      "type": "style",
+      "var-prefix": "$line-",
+      "class-prefix": "next-line"
+    },
+    {
+      "name": "shadow",
+      "description": "阴影",
+      "type": "style",
+      "var-prefix": "$shadow-",
+      "class-prefix": "next-shadow"
+    },
+    {
+      "name": "size",
+      "description": "尺寸",
+      "type": "style",
+      "var-prefix": "$size-",
+      "class-prefix": "next-size"
+    },
+    {
+      "name": "button",
+      "description": "按钮",
+      "type": "component",
+      "var-prefix": "$btn-",
+      "class-prefix": "next-btn"
+    }
+  ]
+}
