@@ -17,15 +17,14 @@ module.exports = function () {
 
     return {
         entry: {
-            'index': './index.js'
+            'index': ['./index.js', './index.scss']
         },
         output: {
             path: path.join(cwd, 'dist'),
             filename: '[name].js',
             publicPath: '/dist/',
             library: 'Vext',
-            libraryTarget: 'umd',
-            umdNamedDefine: true
+            libraryTarget: 'commonjs'
         },
         resolve: {
             extensions: ['*', '.js', '.vue', '.json', '.md', '.scss', '.css'],

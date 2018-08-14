@@ -1,10 +1,8 @@
-import './index.scss';
+const Button = require('./lib/button/lib/index.js');
+const Icon = require('./lib/icon/lib/index.js');
 
-import Button from './lib/button/src/index.js';
-import Icon from './lib/icon/src/index.js';
+const Vext = { Button: Button.default, Icon: Icon.default };
 
-const Vext = { Button, Icon };
-
-Vext.version = '0.0.16';
+Vext.version = '0.0.2';
 
 module.exports.default = module.exports = Vext;
