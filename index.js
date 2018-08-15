@@ -3,6 +3,6 @@ const Icon = require('./lib/icon/lib/index.js');
 
 const Vext = { Button: Button.default, Icon: Icon.default };
 
-Vext.version = '0.0.5';
+Vext.version = '0.0.6';
 
 module.exports.default = module.exports = Vext;

@@ -7,5 +7,5 @@
 /// @classPrefix {prefix}-icon
 ////
 
-$icon-prefix: "." + $css-prefix + "icon" !default;
+$icon-prefix: $css-prefix + "-icon" !default;
 

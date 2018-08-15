@@ -7,7 +7,7 @@
 /// @classPrefix {prefix}-button
 ////
 
-$button-prefix: "." + $css-prefix + "button" !default;
+$button-prefix: $css-prefix + "-button" !default;
 
 /* Global
    ========================================================================== */

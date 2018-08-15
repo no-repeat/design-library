@@ -34,7 +34,7 @@
     }
 
     // 尺寸维度
-    &.#{$css-prefix} {
+    &#{$css-prefix} {
         &small {
             @include button-size($button-size-s-padding, $button-size-s-height, $button-size-s-font, $button-size-s-border-width, $button-size-s-corner);
         }
@@ -117,15 +117,15 @@
             @include button-color($button-text-normal-color, $button-text-normal-color-hover, transparent, transparent, transparent, transparent);
         }
 
-        &.#{$css-prefix}large {
+        &#{$css-prefix}large {
             @include button-size(0, $button-text-size-l-height, $button-text-size-l-font, 0, 0);
         }
 
-        &.#{$css-prefix}medium {
+        &#{$css-prefix}medium {
             @include button-size(0, $button-text-size-m-height, $button-text-size-m-font, 0, 0);
         }
 
-        &.#{$css-prefix}small {
+        &#{$css-prefix}small {
             @include button-size(0, $button-text-size-s-height, $button-text-size-s-font, 0, 0);
         }
 
