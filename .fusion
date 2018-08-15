@@ -1,5 +1,6 @@
 {
   "engine": "scss",
+  "publish": "@no-repeat/theme-template",
   "import": {
     "sources": {
       "dir": "lib",
@@ -12,17 +13,27 @@
       "entries": {}
     }
   },
+  "variables": {
+    "color": "lib/core/lib/style/_color.scss",
+    "corner": "lib/core/lib/style/_corner.scss",
+    "font": "lib/core/lib/style/_font.scss",
+    "icon": "lib/core/lib/style/_icon.scss",
+    "line": "lib/core/lib/style/_line.scss",
+    "shadow": "lib/core/lib/style/_shadow.scss",
+    "size": "lib/core/lib/style/_size.scss",
+    "button": "lib/button/lib/scss/variable.scss"
+  },
   "styles": {
-    "size": {
-      "max": 50,
-      "base": "$size-base"
-    },
     "color": [{}],
     "croner": [{}],
     "font": [{}],
     "icon": [{}],
     "line": [{}],
-    "shadow": [{}]
+    "shadow": [{}],
+    "size": {
+      "max": 50,
+      "base": "$size-base"
+    }
   },
   "components": [
     {
