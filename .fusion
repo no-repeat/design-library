@@ -1,6 +1,6 @@
 {
   "engine": "scss",
-  "publish": "@no-repeat/theme-template",
+  "publish-template": "@no-repeat/theme-template",
   "prefix": ".vext", 
   "import": {
     "sources": {
@@ -23,75 +23,5 @@
     "shadow": "lib/core/lib/style/_shadow.scss",
     "size": "lib/core/lib/style/_size.scss",
     "button": "lib/button/lib/scss/variable.scss"
-  },
-  "styles": {
-    "color": [{}],
-    "croner": [{}],
-    "font": [{}],
-    "icon": [{}],
-    "line": [{}],
-    "shadow": [{}],
-    "size": {
-      "max": 50,
-      "base": "$size-base"
-    }
-  },
-  "components": [
-    {
-      "name": "color",
-      "description": "颜色",
-      "type": "style",
-      "var-prefix": "$color-",
-      "class-prefix": "vext-color"
-    },
-    {
-      "name": "corner",
-      "description": "边角",
-      "type": "style",
-      "var-prefix": "$corner-",
-      "class-prefix": "vext-corner"
-    },
-    {
-      "name": "font",
-      "description": "字体",
-      "type": "style",
-      "var-prefix": "$font-",
-      "class-prefix": "vext-font"
-    },
-    {
-      "name": "icon",
-      "description": "图标",
-      "type": "style",
-      "var-prefix": "$icon-",
-      "class-prefix": "vext-icon"
-    },
-    {
-      "name": "line",
-      "description": "线条",
-      "type": "style",
-      "var-prefix": "$line-",
-      "class-prefix": "vext-line"
-    },
-    {
-      "name": "shadow",
-      "description": "阴影",
-      "type": "style",
-      "var-prefix": "$shadow-",
-      "class-prefix": "vext-shadow"
-    },
-    {
-      "name": "size",
-      "description": "尺寸",
-      "type": "style",
-      "var-prefix": "$size-",
-      "class-prefix": "vext-size"
-    },
-    {
-      "name": "button",
-      "description": "按钮",
-      "type": "component",
-      "var-prefix": "$btn-",
-      "class-prefix": "vext-btn"
-    }
-  ]
+  }
 }
