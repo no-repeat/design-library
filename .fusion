@@ -1,7 +1,7 @@
 {
-  "engine": "scss",
+  "engine": "sass",
   "publish-template": "@no-repeat/theme-template",
-  "prefix": ".vext", 
+  "class-prefix": ".vext", 
   "import": {
     "sources": {
       "dir": "lib",
