@@ -5,12 +5,17 @@
   "import": {
     "sources": {
       "dir": "lib",
-      "entry-file": "lib/index.scss",
+      "entry-file": {
+        "sass": "lib/index.scss"
+      },
       "entries": {}
     },
     "demos": {
       "dir": "demos",
-      "entry-file": "index.html",
+      "entry-file": {
+        "html": "index.html",
+        "deps": "deps.json"
+      },
       "entries": {}
     }
   },
