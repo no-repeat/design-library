@@ -34,16 +34,16 @@
     }
 
     // 尺寸维度
-    &#{$css-prefix} {
-        &small {
+    &#{$class-prefix} {
+        &-small {
             @include button-size($button-size-s-padding, $button-size-s-height, $button-size-s-font, $button-size-s-border-width, $button-size-s-corner);
         }
 
-        &medium {
+        &-medium {
             @include button-size($button-size-m-padding, $button-size-m-height, $button-size-m-font, $button-size-m-border-width, $button-size-m-corner);
         }
 
-        &large {
+        &-large {
             @include button-size($button-size-l-padding, $button-size-l-height, $button-size-l-font, $button-size-l-border-width, $button-size-l-corner);
         }
     }
@@ -117,15 +117,15 @@
             @include button-color($button-text-normal-color, $button-text-normal-color-hover, transparent, transparent, transparent, transparent);
         }
 
-        &#{$css-prefix}large {
+        &#{$class-prefix}-large {
             @include button-size(0, $button-text-size-l-height, $button-text-size-l-font, 0, 0);
         }
 
-        &#{$css-prefix}medium {
+        &#{$class-prefix}-medium {
             @include button-size(0, $button-text-size-m-height, $button-text-size-m-font, 0, 0);
         }
 
-        &#{$css-prefix}small {
+        &#{$class-prefix}-small {
             @include button-size(0, $button-text-size-s-height, $button-text-size-s-font, 0, 0);
         }
 

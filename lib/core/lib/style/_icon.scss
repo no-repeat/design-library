@@ -12,7 +12,7 @@
 $icon-font-path: "//at.alicdn.com/t/font_515771_emcns5054x3whfr" !default;
 
 /// icon-font-family 自定义的icon font 名称
-$icon-font-family: #{to-upper-case(str-slice($css-prefix, 1, 1))}#{str-slice($css-prefix, 2, str-length($css-prefix) - 1)}Icon !default;
+$icon-font-family: "VextIcon" !default;
 
 @font-face {
     font-family: $icon-font-family;
