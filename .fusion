@@ -13,8 +13,7 @@
     "demos": {
       "dir": "demos",
       "entry-file": {
-        "html": "index.html",
-        "deps": "deps.json"
+        "html": "index.html"
       },
       "entries": {}
     }
