@@ -82,19 +82,19 @@ $font-family-base: Roboto, "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang
 /// light
 /// @semantic 细体
 /// @group weight
-/// @export weightcore
+/// @export weight
 $font-weight-1: lighter !default;
 
 /// regular
 /// @semantic 常规
 /// @group weight
-/// @export weightcore
+/// @export weight
 $font-weight-2: normal !default;
 
 /// bold
 /// @semantic 粗体
 /// @group weight
-/// @export weightcore
+/// @export weight
 $font-weight-3: bold !default;
 
 // ------------------- font-size ------------------- //
