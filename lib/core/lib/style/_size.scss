@@ -4,7 +4,6 @@
 /// @category style
 ////
 
-
 /**
  * 尺寸 基础尺寸
  * 命名能在语义的前提下简单就尽量简单, 这里可以是 size-2x, space-2x, size-base ...
@@ -26,10 +25,10 @@
 /// @type Length
 $size-base: 4px !default;
 
-/// s-0
+/// s-zero
 /// @export
 /// @unconfigurable
-$s-0: 0;
+$s-zero: 0;
 
 /// s-1
 /// @unconfigurable

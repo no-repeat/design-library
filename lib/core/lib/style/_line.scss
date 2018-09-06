@@ -10,11 +10,11 @@
 
 // ************************** 公共变量, 供开发者和设计师引用 *********************** //
 
-/// line-0
+/// line-zero
 /// @semantic 无
 /// @export width
-/// @type Length
-$line-0: 0 !default;
+/// @unconfigurable
+$line-zero: 0 !default;
 
 /// line-1
 /// @semantic 细

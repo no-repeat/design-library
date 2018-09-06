@@ -3,7 +3,6 @@
 /// @category style
 ////
 
-
 // Corner 预定义圆角尺寸
 // 根据 Alibaba Base DPL(BASE DPL)设计规范实现
 // 圆角是用一段与角的两边相切的圆弧
@@ -35,8 +34,8 @@ $corner-3: 20px !default;
 /// @unconfigurable
 $corner-circle: 50% !default;
 
-/// corner-right-angle
+/// corner-zero
 /// @semantic 直角
 /// @export
 /// @unconfigurable
-$corner-right-angle: 0 !default;
+$corner-zero: 0 !default;

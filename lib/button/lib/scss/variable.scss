@@ -13,11 +13,11 @@ $button-prefix: $class-prefix + "-button" !default;
 
 /// shadow
 /// @namespace statement/normal
-$button-shadow: $shadow-0 !default;
+$button-shadow: $shadow-zero !default;
 
 /// shadow
 /// @namespace statement/hover
-$button-shadow-hover: $shadow-0 !default;
+$button-shadow-hover: $shadow-zero !default;
 
 /* Size
    ========================================================================== */
@@ -259,7 +259,7 @@ $button-ghost-dark-bg: $color-transparent !default;
 
 /// bg opacity
 /// @namespace statement/normal
-/// @type alpha
+/// @type Alpha
 $button-ghost-dark-bg-opacity: 0 !default;
 $button-ghost-dark-bg-normal: rgba($button-ghost-dark-bg, $button-ghost-dark-bg-opacity);
 
@@ -269,7 +269,7 @@ $button-ghost-dark-bg-hover-rgb: $color-white !default;
 
 /// bg opacity
 /// @namespace statement/hover
-/// @type alpha
+/// @type Alpha
 $button-ghost-dark-bg-hover-opacity: 0.8 !default;
 $button-ghost-dark-bg-hover: rgba($button-ghost-dark-bg-hover-rgb, $button-ghost-dark-bg-hover-opacity);
 
@@ -283,7 +283,7 @@ $button-ghost-dark-color-disabled-rgb: $color-white !default;
 
 /// color opacity
 /// @namespace statement/disabled
-/// @type alpha
+/// @type Alpha
 $button-ghost-dark-color-disabled-opacity: 0.4 !default;
 $button-ghost-dark-color-disabled: rgba($button-ghost-dark-color-disabled-rgb, $button-ghost-dark-color-disabled-opacity);
 
@@ -297,7 +297,7 @@ $button-ghost-dark-border-color-disabled-rgb: $color-white !default;
 
 /// border opacity
 /// @namespace statement/disabled
-/// @type alpha
+/// @type Alpha
 $button-ghost-dark-border-color-disabled-opacity: 0.4 !default;
 $button-ghost-dark-border-color-disabled: rgba($button-ghost-dark-border-color-disabled-rgb, $button-ghost-dark-border-color-disabled-opacity);
 
@@ -319,7 +319,7 @@ $button-ghost-light-bg: $color-transparent !default;
 
 /// bg opacity
 /// @namespace statement/normal
-/// @type alpha
+/// @type Alpha
 $button-ghost-light-bg-opacity: 0 !default;
 $button-ghost-light-bg-normal: rgba($button-ghost-light-bg, $button-ghost-light-bg-opacity);
 
@@ -337,7 +337,7 @@ $button-ghost-light-bg-hover-rgb: $color-black !default;
 
 /// bg opacity
 /// @namespace statement/hover
-/// @type alpha
+/// @type Alpha
 $button-ghost-light-bg-hover-opacity: 0.92 !default;
 $button-ghost-light-bg-hover: rgba($button-ghost-light-bg-hover-rgb, $button-ghost-light-bg-hover-opacity);
 
@@ -347,7 +347,7 @@ $button-ghost-light-color-disabled-rgb: $color-black !default;
 
 /// text opacity
 /// @namespace statement/disabled
-/// @type alpha
+/// @type Alpha
 $button-ghost-light-color-disabled-opacity: 0.1 !default;
 $button-ghost-light-color-disabled: rgba($button-ghost-light-color-disabled-rgb, $button-ghost-light-color-disabled-opacity);
 
@@ -361,7 +361,7 @@ $button-ghost-light-border-color-disabled-rgb: $color-black !default;
 
 /// border opacity
 /// @namespace statement/disabled
-/// @type alpha
+/// @type Alpha
 $button-ghost-light-border-color-disabled-opacity: 0.1 !default;
 $button-ghost-light-border-color-disabled: rgba($button-ghost-light-border-color-disabled-rgb, $button-ghost-light-border-color-disabled-opacity);
 
