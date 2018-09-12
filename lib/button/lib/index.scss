@@ -34,7 +34,7 @@
     }
 
     // 尺寸维度
-    &#{$class-prefix} {
+    & {
         &-small {
             @include button-size($button-size-s-padding, $button-size-s-height, $button-size-s-font, $button-size-s-border-width, $button-size-s-corner);
         }
