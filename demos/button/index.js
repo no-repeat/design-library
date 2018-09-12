@@ -4,7 +4,7 @@ import '@alife/vext/lib/demo-helper/lib/index.scss';
 import '../src/index.scss';
 
 import Vue from 'vue';
-import { vDemo, vDemoGroup } from '@alife/vext/lib/demo-helper';
+import { vDemo, vDemoGroup, initDemo } from '@alife/vext/lib/demo-helper';
 import vButton from '../src/index';
 
 new Vue({
@@ -30,6 +30,4 @@ new Vue({
     }
 });
 
-
-
-
+initDemo('button');
