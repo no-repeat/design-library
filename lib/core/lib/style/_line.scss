@@ -36,15 +36,18 @@ $line-3: 3px !default;
 
 /// line-solid
 /// @export style
+/// @group style
 /// @unconfigurable
 $line-solid: solid !default;
 
 /// line-dashed
 /// @export style
+/// @group style
 /// @unconfigurable
 $line-dashed: dashed !default;
 
 /// line-dotted
 /// @export style
+/// @group style
 /// @unconfigurable
 $line-dotted: dotted !default;
