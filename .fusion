@@ -1,6 +1,6 @@
 {
   "engine": "sass",
-  "publish-template": "@no-repeat/theme-template",
+  "publish-template": "@no-repeat/vext-theme-template@0.0.10",
   "class-prefix": ".vext", 
   "import": {
     "sources": {
