@@ -10,21 +10,26 @@
     <link href="./build/index.css" id="theme-style" rel="stylesheet" type="text/css" />
 
     <script src="//g.alicdn.com/vext/vue/vue.min.js"></script>
-    <style>.vext-demo {
+    <style>html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.vext-demo {
   width: 100%;
   border-radius: 3px;
-  overflow: hidden;
-  border: 1px solid #ccc; }
+  overflow: hidden; }
   .vext-demo-name {
     padding: 4px 12px;
-    color: #333;
-    background-color: #ccc;
-    font-size: 20px; }
+    color: #000;
+    font-size: 20px;
+    font-weight: 900; }
   .vext-demo-body {
     padding: 12px 0; }
     .vext-demo-body-name {
       padding: 4px 24px;
-      color: #333;
+      color: #666;
       font-size: 16px; }
   .vext-demo table {
     font-size: 12px;
@@ -1413,7 +1418,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   "use strict";
 
-  function sendMessage(compName, type, body) {
+  function sendMessage(type, body, compName) {
     var parent = window.parent;
 
     if (parent !== window) {
@@ -1429,7 +1434,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   function initDemo(compName) {
     window.compName = compName;
 
-    sendMessage(compName, 'loaded');
+    sendMessage('loaded', null, compName);
   }
 
   /* harmony default export */__webpack_exports__["a"] = initDemo;
