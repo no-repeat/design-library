@@ -2,6 +2,10 @@
   "engine": "sass",
   "publish-template": "@no-repeat/vext-theme-template@0.0.10",
   "class-prefix": ".vext", 
+  "icon": {
+    "iconfont-project-id": "283484",
+    "iconfont-path": "//at.alicdn.com/daily/font_283484_fzdris7yp9ujrpbcezldjf9a4i"
+  },
   "import": {
     "sources": {
       "dir": "lib",
