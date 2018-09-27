@@ -12,25 +12,29 @@
 
 /// line-zero
 /// @semantic 无
-/// @export width
+/// @export size
+/// @group size
 /// @unconfigurable
 $line-zero: 0 !default;
 
 /// line-1
 /// @semantic 细
-/// @export width
+/// @export size
+/// @group size
 /// @type Length
 $line-1: 1px !default;
 
 /// line-2
 /// @semantic 常规
-/// @export width
+/// @export size
+/// @group size
 /// @type Length
 $line-2: 2px !default;
 
 /// line-3
 /// @semantic 粗
-/// @export width
+/// @export size
+/// @group size
 /// @type Length
 $line-3: 3px !default;
 
